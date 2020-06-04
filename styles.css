@@ -1,0 +1,591 @@
+body {
+    margin: 0;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    color: #f59f6a;
+}
+
+h2 {
+    font-family: 'Patua One', cursive;
+    color: #f59f6a;
+    font-weight: normal;
+}
+
+h3 {
+    font-family: 'Patua One', cursive;
+    color: #3d8ed1;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.2rem;
+}
+
+hr {
+    width: 50%;
+    color: #badfdb;
+    opacity: 0.5;
+}
+
+a {
+    font-family: 'Jost', sans-serif;
+    color: #f8a978;
+    padding: 15px;
+}
+
+#title-name {
+    color: #f5833c;
+    font-size: 4.06em;
+    margin-bottom: 15px;
+}
+
+#title-subname {
+    color: #f5833c;
+    font-size: 17px;
+}
+
+#skills-header{
+    margin: 50px auto 50px auto;
+    font-size: 50px;
+}
+
+#hmu-paragraph {
+    font-size: 15px;
+    width: 30%;
+    margin: 20px auto 40px auto;
+    line-height: 1.5;
+}
+
+.navbar-toggler {
+    border-color: #f5833c;
+}
+
+.nav-font {
+    font-size: 1.2rem;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(245,131,60, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/***************************** Profile Section *********************************/
+
+.profile {
+    margin: 50px auto 50px auto;
+    width: 40%;
+    line-height: 1.5;
+}
+
+.profilepic {
+    border-radius: 100%;
+    width: 30%;
+}
+
+.top-container {
+    background-color: #fcf9ea;
+    position: relative;
+    padding-top: 100px;
+    height: 670px;
+}
+
+.middle-container {
+
+}
+
+.bottom-container {
+    background-color: #fcf9ea;
+    margin: 40px auto 0 auto;
+    padding-top: 10px;
+}
+
+/***************************** Title Images *********************************/
+
+.title-images {
+    display: flex; 
+    height: 435px; 
+    justify-content: space-between; 
+    align-items:flex-end
+}
+
+.basketball{
+    height: 650px;
+}
+
+.coding {
+    height: 310px;  
+}
+
+.presentation {
+    height: 400px;
+}
+
+.nav-font {
+    font-family: 'Patua One', cursive;
+}
+/***************************** Skills Section *********************************/
+
+.skill-row {
+    width: 50%;
+    margin: 120px auto 120px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.skill-icon-left {
+    width: 19%;
+    float: left;
+    margin-right: 30px;
+}
+
+.skill-icon-right {
+    width: 19%;
+    float: right;
+    margin-left: 30px;
+}
+
+.skills-headers {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+/***************************** Contact Me Section *********************************/
+.contact-button {
+	position: relative;
+	display: inline-block;
+	padding: 1.2em 2em;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+	color: white;
+}
+.contact-button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: linear-gradient(135deg, #50b2ca, #4be6b2);
+		border-radius: 4px;
+		transition: box-shadow .5s ease, transform .2s ease; 
+		will-change: transform;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+		transform:
+			translateY(var(--ty, 0))
+			rotateX(var(--rx, 0))
+			rotateY(var(--ry, 0))
+			translateZ(var(--tz, -12px));
+	}
+	
+.contact-button:hover::before {
+		box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+	}
+	
+.contact-button::after {
+		position: relative;
+		display: inline-block;
+		content: attr(data-title);
+		transition: transform .2s ease; 
+		font-weight: bold;
+		letter-spacing: .01em;
+		will-change: transform;
+		transform:
+			translateY(var(--ty, 0))
+			rotateX(var(--rx, 0))
+			rotateY(var(--ry, 0));
+	}
+
+@media (max-width: 900px) {
+    .title-images {
+        display: flex; 
+        height: 435px; 
+        justify-content: center;
+        align-items:flex-end
+    }
+
+    .basketball{
+        display: None;
+    }
+    
+    .coding {
+        height: 310px;  
+    }
+    
+    .presentation {
+        display: None;
+    }
+    
+    .profilepic {
+        border-radius: 100%;
+        width: 120px;
+    }
+
+    .skill-icon-left {
+        width: 100px;
+        float: left;
+        margin-right: 30px;
+    }
+    
+    .skill-icon-right {
+        width: 100px;
+        float: right;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 901px) and (max-width: 1330px) {
+    .title-images {
+        display: flex; 
+        height: 435px; 
+        justify-content: space-between;
+        align-items:flex-end
+    }
+
+    .basketball{
+        height: 550px;
+    }
+    
+    .coding {
+        height: 350px;  
+        padding-right: 50px;
+    }
+    
+    .presentation {
+        display: None;
+    }
+    
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Experience Page */
+/* Header Banner */
+.exp-top-container {
+    background-color: #fcf9ea;
+    position: relative;
+    height: 830px;
+    padding-top: 100px;
+}
+
+.exp-quote {
+    color: #f5833c;
+    margin-top: 2.5rem;
+}
+
+.desk-header-img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 50px;
+    opacity: 90%;
+}
+
+/* Education Portion */
+.education-header {
+    margin: 5rem auto 3rem;
+    font-size: 2.5rem;
+}
+
+.education-slides {
+    margin: auto;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+/* School Content */
+.school-content {
+    text-align: left;
+    position: absolute;
+    width: 60%;
+    left: 320px;
+    top: 70px;
+}
+
+.school-logo {
+    position: absolute;
+    width: 130px;
+    top: 70px;
+    left: 150px;
+}
+
+.school-years {
+    margin: 0;
+}
+
+.carousel-item {
+    height: 450px;
+}
+
+/* nj stuff */
+.njc-carousel-hidden {
+    visibility: hidden;
+}
+
+.njc-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 25%;
+}
+
+.njc-ssbut {
+    position: relative;
+    visibility: visible;
+}
+
+.njc-ssbut2 {
+    position: relative;
+    visibility: hidden;
+}
+
+/* sutd stuff */
+.sutd-carousel-hidden {
+    visibility: hidden;
+}
+
+.sutd-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 25%;
+}
+
+.sutd-ssbut {
+    position: relative;
+    visibility: visible;
+}
+
+.sutd-ssbut2 {
+    position: relative;
+    visibility: hidden;
+}
+
+/* zju stuff */
+.zju-carousel-hidden {
+    visibility: hidden;
+}
+
+.zju-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 25%;
+}
+
+.zju-ssbut {
+    position: relative;
+    visibility: visible;
+}
+
+.zju-ssbut2 {
+    position: relative;
+    visibility: hidden;
+}
+
+/* Army stuff */
+.army-carousel-hidden {
+    visibility: hidden;
+}
+
+.army-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 25%;
+}
+
+.army-ssbut {
+    position: relative;
+    visibility: visible;
+}
+
+.army-ssbut2 {
+    position: relative;
+    visibility: hidden;
+}
+
+/* ------------------------------------------------------------------------------------------ */
+/* Skills Page */
+.skills-top-container {
+    background-color: #fcf9ea;
+    position: relative;
+    height: 790px;
+}
+
+.skills-basketball {
+    margin: 85px;
+    height: 280px;
+}
+
+.all-skills {
+    padding: 20px 200px 50px;
+}
+
+.skills-type {
+    margin-top: 50px;
+}
+
+.skills-row {
+    display: flex;
+    width: 100%;
+    margin: 5px;
+    justify-content: space-between;
+}
+
+.skill-content {
+    display: inline-block;
+    margin: 0;
+}
+
+.hvr-border-fade {
+    padding: 3px 10px;
+    margin: 0;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow;
+    transition-property: box-shadow;
+    box-shadow: inset 0 0 0 4px #ffffff, 0 0 1px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */
+  }
+  .hvr-border-fade:hover, .hvr-border-fade:focus, .hvr-border-fade:active {
+    box-shadow: inset 0 0 0 2px #53c2b5, 0 0 1px rgba(0, 0, 0, 0);
+    /* Hack to improve aliasing on mobile/tablet devices */
+  }
+  
+
+/* Projects Section */
+.proj-top-container {
+    height: 790px;
+    background-color: #fcf9ea;
+    padding-top: 100px;
+}
+
+.proj-header-img {
+    margin-top: 100px;
+}
+
+.proj-block1 {
+    padding: 5rem 9rem;
+}
+
+.proj-block2 {
+    padding: 5rem 9rem;
+    background-color: #ffc5a1;
+}
+
+.proj-description {
+    color: rgb(153, 152, 152);
+}
+
+.proj-img {
+    margin-bottom: 50px;
+}
+
+/* social bar */
+
+.sm-icon {
+    position: fixed;
+    right: 30px;
+    top: 65px;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3d8ed1;
+    z-index: 10;
+    padding: 0;
+}
+
+.sm-icon i{
+    font-size: 20px;
+    transition: 0.2s linear;
+    margin-top: 10px;
+}
+.sm-icon:hover i{
+    transform: scale(1.3);
+    color: #f5833c;
+}
+.sm-icon2 {
+    position: fixed;
+    right: 30px;
+    top: 120px;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3d8ed1;
+    z-index: 10;
+    padding: 0;
+}
+
+.sm-icon2 i{
+    font-size: 20px;
+    transition: 0.2s linear;
+    margin-top: 10px;
+}
+.sm-icon2:hover i{
+    transform: scale(1.3);
+    color: #f5833c;
+}
+
+.sm-icon3 {
+    position: fixed;
+    right: 30px;
+    top: 175px;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3d8ed1;
+    z-index: 10;
+    padding: 0;
+}
+
+.sm-icon3 i{
+    font-size: 20px;
+    transition: 0.2s linear;
+    margin-top: 10px;
+}
+.sm-icon3:hover i{
+    transform: scale(1.3);
+    color: #f5833c;
+}
+
+.sm-icon4 {
+    position: fixed;
+    right: 30px;
+    top: 230px;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    text-align: center;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3d8ed1;
+    z-index: 10;
+    padding: 0;
+}
+
+.sm-icon4 i{
+    font-size: 20px;
+    transition: 0.2s linear;
+    margin-top: 10px;
+}
+.sm-icon4:hover i{
+    transform: scale(1.3);
+    color: #f5833c;
+}
+
